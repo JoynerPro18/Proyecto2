@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Formulario de puesto</title>
+    <style>
+      body {
+        background-color: #f2f2f2;
+        font-family: Arial, sans-serif;
+      }
+
+      h1 {
+        color: #333;
+        text-align: center;
+      }
+
+      form {
+        width: 400px;
+        margin: 0 auto;
+      }
+
+      label {
+        display: block;
+        margin-bottom: 5px;
+        color: #666;
+      }
+
+      input[type="text"],
+      input[type="date"] {
+        width: 100%;
+        padding: 8px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+        margin-bottom: 10px;
+      }
+
+      input[type="button"] {
+        background-color: #4caf50;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 16px;
+        margin-top: 10px;
+      }
+
+      input[type="button"]:hover {
+        background-color: #45a049;
+      }
+    </style>
+    <script>
+      function imprimirDatos() {
+        var id = document.getElementById("id").value;
+        var Identificacion = document.getElementById("Codigo").value;
+        var Nombre = document.getElementById("Descripcion").value;
+        var Apellido = document.getElementById("Activo").value;
+       /* var Email = document.getElementById("Email").value;
+        var Telefono = document.getElementById("Telefono").value;
+        var Dirección = document.getElementById("Direccion").value;
+        var Activo = document.getElementById("Activo").value;
+        var EsReclutador = document.getElementById("EsReclutador").value;
+        var EsEntrevistador = document.getElementById("EsEntrevistador").value; */
+
+        console.log("ID: " + id);
+        console.log("Codigo: " + Codigo);
+        console.log("Descripcion: " + Descripcion);
+        console.log("Activo: " + Activo);
+        /*console.log("Email: " + Email);
+        console.log("Telefono: " + Telefono);
+        console.log("Direccion: " + Dirección);
+        console.log("Activo: " + Activo);
+        console.log("EsReclutador: " + EsReclutador);
+        console.log("EsEntrevistador: " + EsEntrevistador);
+*/
+        // despues de esta linea insertar el script para el php o el lenguaje * hacer lo que quieras con los datos, como enviarlos a un servidor o almacenarlos en una base de datos.
+      }
+    </script>
+  </head>
+  <body>
+    <h1>Formulario de puesto</h1>
+
+    <form>
+      <label for="id">ID:</label>
+      <input type="text" id="id" name="id">
+
+      <label for="Codigo">Codigo:</label>
+      <input type="text" id="Codigo" name="Codigo">
+
+      <label for="Descripcion">Descripcion:</label>
+      <input type="text" id="Descripcion" name="Descripcion">
+
+      <label for="Activo">Activo:</label>
+      <input type="text" id="Activo" name="Activo">
+
+    
+    </form>
+  </body>
+</html>

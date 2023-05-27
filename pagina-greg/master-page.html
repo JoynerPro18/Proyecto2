@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en, esp">
+    <head>
+      <title>Formulario de reclutamiento</title>
+      <script>
+        function imprimirDatos() {
+          var id = document.getElementById("id").value;
+          var numeroSolicitud = document.getElementById("numeroSolicitud").value;
+          var nombre = document.getElementById("nombre").value;
+          var telefono = document.getElementById("telefono").value;
+          var direccion = document.getElementById("direccion").value;
+          var fechaIngreso = document.getElementById("fechaIngreso").value;
+          
+          console.log("ID: " + id);
+          console.log("Número de solicitud: " + numeroSolicitud);
+          console.log("Nombre: " + nombre);
+          console.log("Teléfono: " + telefono);
+          console.log("Dirección: " + direccion);
+          console.log("Fecha de ingreso: " + fechaIngreso);
+          
+          // Aquí puedes hacer lo que quieras con los datos, como enviarlos a un servidor o almacenarlos en una base de datos.
+        }
+      </script>
+    </head>
+    <body>
+      <h1>Formulario de reclutamiento</h1>
+      
+      <form>
+        <label for="id">ID:</label>
+        <input type="text" id="id" name="id"><br><br>
+        
+        <label for="numeroSolicitud">Número de solicitud:</label>
+        <input type="text" id="numeroSolicitud" name="numeroSolicitud"><br><br>
+        
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre"><br><br>
+        
+        <label for="telefono">Teléfono:</label>
+        <input type="text" id="telefono" name="telefono"><br><br>
+        
+        <label for="direccion">Dirección:</label>
+        <input type="text" id="direccion" name="direccion"><br><br>
+        
+        <label for="fechaIngreso">Fecha de ingreso:</label>
+        <input type="date" id="fechaIngreso" name="fechaIngreso"><br><br>
+        
+        <input type="button" value="Imprimir y editar datos" onclick="imprimirDatos()">
+      </form>
+    </body>
+    </html>
+    
