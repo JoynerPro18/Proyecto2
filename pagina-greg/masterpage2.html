@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+  <form action='Conexion.php' method='post' class="form-register"></form>
   <head>
     <title>Formulario de reclutamiento</title>
     <style>
@@ -78,7 +79,7 @@
     </script>
   </head>
   <body>
-    <h1>Formulario de reclutamiento</h1>
+    <h1>Formulario de Reclutamiento</h1>
 
     <form>
       <label for="id">ID:</label>
@@ -105,13 +106,13 @@
       <label for="Activo">Activo:</label>
       <input type="text" id="Activo" name="Activo">
 
-      <label for="EsReclutador">EsReclutador:</label>
+      <label for="EsReclutador">Reclutador:</label>
       <input type="text" id="EsReclutador" name="EsReclutador">
 
-      <label for="EsEntrevistador">EsEntrevistador:</label>
+      <label for="EsEntrevistador">Entrevistador:</label>
       <input type="text" id="EsEntrevistador" name="EsEntrevistador">
 
-      <input type="button" value="Imprimir y editar datos" onclick="imprimirDatos()">
+      <input type="submit" value="Enviar" onclick="imprimirDatos()">
     </form>
   </body>
 </html>
